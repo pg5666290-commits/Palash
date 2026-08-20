@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Arcade Blaster</title>
+
+<style>
+*{box-sizing:border-box;user-select:none}
+
+body{
+  margin:0;
+  background:#090b14;
+  color:white;
+  font-family:Arial,sans-serif;
+  overflow:hidden;
+  text-align:center;
+}
+
+h1{
+  margin:8px 0;
+  color:#00eaff;
+  text-shadow:0 0 12px #00eaff;
+}
+
+#hud{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:7px;
+}
+
+.box{
+  background:#171b2b;
+  padding:7px 12px;
+  border-radius:8px;
+  border:1px solid #333b5c;
+}
+
+#game{
+  position:relative;
+  width:96vw;
+  max-width:950px;
+  height:70vh;
+  margin:auto;
+  overflow:hidden;
+  border:3px solid #00eaff;
+  border-radius:12px;
+  background:
+    radial-gradient(circle at 20% 20%,#243b55 0 2px,transparent 3px),
+    radial-gradient(circle at 70% 60%,#243b55 0 2px,transparent 3px),
+    linear-gradient(#10182c,#050711);
+  cursor:crosshair;
+}
+
+.enemy{
+  position:absolute;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background
